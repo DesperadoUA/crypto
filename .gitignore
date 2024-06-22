@@ -1,0 +1,7 @@
+/node_modules
+/.idea
+wp-config.php
+/downloads
+/uploads
+/wp-content/uploads/
+/wp-content/themes/crypto/node_modules

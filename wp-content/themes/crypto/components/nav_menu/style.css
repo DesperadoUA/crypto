@@ -1,0 +1,27 @@
+.cms .nav_menu {
+    border-radius: 10px;
+    padding: 15px 15px 5px 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 20px rgba(2, 19, 62, .2);
+    border-left: 4px solid var(--color_11);
+    background: var(--color_3);
+    margin-left: 0;
+}
+.nav_menu li {
+    list-style: none;
+}
+.nav_menu li a {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 15px;
+    line-height: 24px;
+    color: var(--color_7);
+    text-decoration: none;
+}
+@media (max-width: 767px) {
+    .cms .nav_menu {
+        margin-top: 0;
+    }
+}

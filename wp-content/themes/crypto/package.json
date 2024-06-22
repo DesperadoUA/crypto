@@ -1,0 +1,14 @@
+{
+  "name": "webpack_wp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "create": "node build.js"
+  },
+  "browserslist": "> 0.25%, not dead",
+  "author": "Lazarev",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {}
+}
