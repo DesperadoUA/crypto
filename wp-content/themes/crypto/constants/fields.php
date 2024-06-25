@@ -20,5 +20,9 @@ const FIELDS_KEY = [
     'BONUS' => 'bonus',
     'RELATIVE_ECOSYSTEM' => 'relative_ecosystem',
     'RELATIVE_BLOG' => 'relative_blog',
-    'RELATIVE_NEWS' => 'relative_news'
+    'RELATIVE_NEWS' => 'relative_news',
+    'RATING' => 'rating',
+    'ACTIVITY' => 'activity',
+    'PROJECT_AWARD' => 'project_award',
+    'AIRDROP_STATUS' => 'airdrop_status'
 ];

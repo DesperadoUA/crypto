@@ -4,7 +4,7 @@ use Carbon_Fields\Field;
 
 add_action( 'carbon_fields_register_fields', 'relative_ecosystem' );
 function relative_ecosystem():void {
-    $arrPostTypes = [GAME_POST_TYPE];
+    $arrPostTypes = [GAME_POST_TYPE, AIRDROP_POST_TYPE];
     $posts = get_posts( array(
         'numberposts' => -1,
         'orderby'     => 'date',

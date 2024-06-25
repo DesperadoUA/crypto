@@ -55,7 +55,7 @@ function input_fields() {
         [
             'container_label' => 'Ref',
             'label' => 'ref link',
-            'post_types' => [GAME_POST_TYPE],
+            'post_types' => [GAME_POST_TYPE, AIRDROP_POST_TYPE],
             'key' => FIELDS_KEY['REF'],
             'editor' => 'text',
             'default' => ''
@@ -63,8 +63,24 @@ function input_fields() {
         [
             'container_label' => 'Bonus',
             'label' => 'bonus',
-            'post_types' => [GAME_POST_TYPE],
+            'post_types' => [GAME_POST_TYPE, AIRDROP_POST_TYPE],
             'key' => FIELDS_KEY['BONUS'],
+            'editor' => 'text',
+            'default' => ''
+        ],
+        [
+            'container_label' => 'Rating',
+            'label' => 'max 100',
+            'post_types' => [AIRDROP_POST_TYPE],
+            'key' => FIELDS_KEY['RATING'],
+            'editor' => 'text',
+            'default' => ''
+        ],
+        [
+            'container_label' => 'Project award',
+            'label' => 'Общая награда проекта',
+            'post_types' => [AIRDROP_POST_TYPE],
+            'key' => FIELDS_KEY['PROJECT_AWARD'],
             'editor' => 'text',
             'default' => ''
         ]
