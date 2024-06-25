@@ -1,0 +1,29 @@
+.breadcrumb {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    overflow-x: auto;
+}
+.breadcrumbItem {
+    font-weight: bold;
+    color: var(--color_7);
+    position: relative;
+    white-space: nowrap;
+}
+.breadcrumbItem::after {
+    content: ">";
+    position: absolute;
+    right: -18px;
+}
+.breadcrumbItem:last-child::after {
+    content: "";
+}
+.breadcrumbItem  a {
+    text-decoration: none;
+    color: var(--color_7);
+}
+@media (max-width: 767px) {
+    .breadcrumb {
+        padding-bottom: 10px;
+    }
+}

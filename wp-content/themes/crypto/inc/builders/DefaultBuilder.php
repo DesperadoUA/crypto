@@ -112,4 +112,29 @@ class DefaultBuilder implements Builder {
         $str .= "</nav></div></section>";
         return $str;
     }
+    public function breadcrumb(LinkList $list) {
+        $str = "<section class='section_padding'><div class='container'>";
+        $str .= "<ol class='breadcrumb' itemscope itemtype='https://schema.org/BreadcrumbList'>";
+        for($i=0; $i < count($list->posts); $i++) {
+            if($i < count($list->posts)-1) {
+                $counter = $i+1;
+                $str .= "<li itemprop='itemListElement' itemscope
+                            itemtype='https://schema.org/ListItem' class='breadcrumbItem'>
+                            <a itemprop='item' href='{$list->posts[$i]->permalink}'>
+                            <span itemprop='name'>{$list->posts[$i]->title}</span></a>
+                            <meta itemprop='position' content='{$counter}' />
+                        </li>";
+            } else {
+                $str .= "<li itemprop='itemListElement' itemscope
+                            itemtype='https://schema.org/ListItem' class='breadcrumbItem'>
+                            <div itemprop='item'>
+                            <span itemprop='name'>{$list->posts[$i]->title}</span></div>
+                            <meta itemprop='position' content='{$counter}' />
+                        </li>";
+            }
+        }
+        $str .= "</ol>";
+        $str .= "</div></section>";
+        return $str;
+    }
 }

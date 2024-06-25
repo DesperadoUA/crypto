@@ -24,4 +24,5 @@ interface Builder {
     public function reviews(ReviewPostSettings $postSettings, ReviewItemList $list);
     public function reviewsLoop(ReviewItemList $list);
     public function reviewsForm($postId);
+    public function breadcrumb(LinkList $list);
 }

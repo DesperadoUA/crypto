@@ -106,4 +106,7 @@ class AmpBuilder implements Builder {
     public function reviewsForm($postId) {
         return '';
     }
+    public function breadcrumb(LinkList $list) {
+        return '';
+    }
 }

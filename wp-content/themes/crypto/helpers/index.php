@@ -66,16 +66,28 @@ function getTemplate($post):string {
             case ID_GAMES:
                 $template = 'GAMES_PAGE';
                 break;
+            case ID_PROJECTS:
+                $template = 'PROJECTS_PAGE';
+                break;
+            case ID_AIRDROPS:
+                $template = 'AIRDROPS_PAGE';
+                break;
+            case ID_ECOSYSTEM:
+                $template = 'ECOSYSTEMS_PAGE';
+                break;
             default:
                 $template = 'DEFAULT';
         }
     } else if (is_single()) {
         switch ($post->post_type) {
-            case POST_TYPE_BLOG:
+            case BLOG_POST_TYPE:
                 $template = 'BLOG';
                 break;
-            case POST_TYPE_GAME:
+            case GAME_POST_TYPE:
                 $template = 'GAME';
+                break;
+            case NEWS_POST_TYPE:
+                $template = 'NEWS';
                 break;
             default:
                 $template = 'DEFAULT';
