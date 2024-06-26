@@ -1,0 +1,127 @@
+.airdrop_container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.airdrop_card {
+    width: 100%;
+    display: flex;
+    box-shadow: 0 4px 10px rgba(127, 162, 252, 0.25);
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    position: relative;
+}
+.airdrop_card_status {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 5px;
+    z-index: 1;
+    color: var(--color_3);
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 12px;
+}
+.airdrop_card_status.NEW {
+    background: var(--color_12);
+}
+.airdrop_card_status.ACTIVE {
+    background: var(--color_13);
+}
+.airdrop_card_status.GONE {
+    background: var(--color_4);
+}
+.airdrop_card_status.COMING {
+    background: var(--color_11);
+}
+.airdrop_card_col {
+    padding-left: 5px;
+    padding-right: 5px;
+    box-sizing: border-box;
+}
+.airdrop_card_col:nth-child(1), .airdrop_card_col:nth-child(2), .airdrop_card_col:nth-child(3), .airdrop_card_col:nth-child(4), .airdrop_card_col:nth-child(5) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border-right: 2px solid var(--color_2);
+    justify-content: center;
+}
+.airdrop_card_col:nth-child(6) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-left: 15px;
+    padding-right: 0px;
+    gap: 10px;
+}
+.airdrop_card_permalink, .airdrop_card_value, .airdrop_card_activity, .airdrop_card_award {
+    width: 100%;
+    font-weight: bold;
+    color: var(--color_7);
+    text-decoration: none;
+    text-align: center;
+}
+.airdrop_card_value a {
+    color: var(--color_7);
+    text-decoration: none;
+}
+.airdrop_card_logo {
+    border-radius: 50%;
+}
+.airdrop_card_col:nth-child(1) {
+    width: 15%;
+    gap:15px;
+    padding-right: 15px;
+    padding-left: 0px;
+}
+.airdrop_card_col:nth-child(4), .airdrop_card_col:nth-child(5) {
+    width: 20%;
+}
+.airdrop_card_col:nth-child(3), .airdrop_card_col:nth-child(2), .airdrop_card_col:nth-child(6) {
+    width: 15%;
+}
+.airdrop_card_btn {
+    width: 100%;
+}
+.airdrop_card_action {
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+@media (max-width: 1000px) {
+    .airdrop_card {
+        flex-wrap: wrap;
+        width: calc(50% - 40px);
+    }
+    .airdrop_card_col:nth-child(6) {
+        width: 100%;
+        padding-left: 0px;
+    }
+    .airdrop_card_col:nth-child(5), .airdrop_card_col:nth-child(4), .airdrop_card_col:nth-child(3) {
+        border-right: 0px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        width: 100%;
+    }
+    .airdrop_card_col:nth-child(1), .airdrop_card_col:nth-child(2) {
+        width: 50%;
+    }
+    .airdrop_card_col:nth-child(2) {
+        border-right: 0px;
+    }
+    .airdrop_card_col:nth-child(3) {
+        margin-top: 15px;
+        padding-top: 10px;
+        border-top: 2px solid var(--color_2);
+    }
+    .airdrop_card_col:nth-child(6) {
+        margin-top: 10px;
+    }
+}
+@media (max-width: 600px) {
+    .airdrop_card {
+        width: 100%;
+    }
+}

@@ -6,7 +6,7 @@ class GameCardItem {
     public string $excerpt = '';
     public string $ref = '';
     public string $bonus = '';
-    public LinkItem $ecosystem;
+    public LinkItem|null $ecosystem;
     function __construct(string $title, string $permalink, string $thumbnail, string $excerpt, string $bonus, string $ref, LinkItem $ecosystem = null) {
         $this->title = $title;
         $this->permalink = $permalink;

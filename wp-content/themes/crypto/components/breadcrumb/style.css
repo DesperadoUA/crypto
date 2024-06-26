@@ -3,6 +3,7 @@
     gap: 30px;
     list-style: none;
     overflow-x: auto;
+    text-overflow: ellipsis;
 }
 .breadcrumbItem {
     font-weight: bold;

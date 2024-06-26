@@ -109,4 +109,12 @@ class AmpBuilder implements Builder {
     public function breadcrumb(LinkList $list) {
         return '';
     }
+    public function airdropCard(AirdropCardItem $post):string {
+        $str = "";
+        return $str;
+    }
+    public function airdropLoop(AirdropCardList $list):string {
+        $str = "";
+        return $str;
+    }
 }

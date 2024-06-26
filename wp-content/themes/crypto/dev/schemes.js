@@ -5,7 +5,7 @@ module.exports.schemas = {
 	PAGES: {
 		FRONT_PAGE: {
 			js: jsDI.concat(['faq']),
-			css: cssDI.concat(['faq', 'blog_card', 'news_card', 'section_title', 'game_card']),
+			css: cssDI.concat(['faq', 'blog_card', 'news_card', 'section_title', 'game_card', 'airdrop_card']),
 			fileName: 'front'
 		},
 		BLOG_PAGE: {
@@ -30,7 +30,7 @@ module.exports.schemas = {
 		},
 		AIRDROPS_PAGE: {
 			js: jsDI.concat([]),
-			css: cssDI.concat(['category_links', 'breadcrumb']),
+			css: cssDI.concat(['category_links', 'breadcrumb', 'airdrop_card']),
 			fileName: 'airdrops'
 		},
 		ECOSYSTEMS_PAGE: {

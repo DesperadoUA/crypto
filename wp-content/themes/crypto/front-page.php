@@ -10,6 +10,8 @@ global $builder;
         <?php include 'components/news_loop_main_page/dal.php'; ?>
     </div>
 </section>
+<?= $builder->headingSection('AIRDROPS'); ?>
+<?php include 'components/airdrop_loop_main_page/dal.php'; ?>
 <?= $builder->headingSection('GAMES'); ?>
 <section class="section_padding">
     <div class="container">

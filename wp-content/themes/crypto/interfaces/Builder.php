@@ -25,4 +25,6 @@ interface Builder {
     public function reviewsLoop(ReviewItemList $list);
     public function reviewsForm($postId);
     public function breadcrumb(LinkList $list);
+    public function airdropCard(AirdropCardItem $post);
+    public function airdropLoop(AirdropCardList $list);
 }

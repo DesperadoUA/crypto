@@ -75,6 +75,7 @@ img, iframe {
     text-decoration: none;
     text-align: center;
     cursor: pointer;
+    box-sizing: border-box;
 }
 .btn_secondary {
     background: var(--color_12);

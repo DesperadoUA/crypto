@@ -5,6 +5,7 @@ class DefaultBuilder implements Builder {
     use Game;
     use Blog;
     use News;
+    use Airdrop;
     private $ampPrefix = PREFIX_AMP;
     private $translate = TRANSLATE;
     private $lang = LANG;
