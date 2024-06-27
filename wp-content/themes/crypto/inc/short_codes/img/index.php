@@ -1,8 +1,6 @@
 <?php
-global $builder;
 add_shortcode( 'img', 'img_shortcode');
 function img_shortcode($attr) {
-    global $post;
     $imgItem = get_img_item($attr['id']);
     $width = wp_is_mobile() ? $imgItem->mediumSettings[1] : $imgItem->fullSettings[1];
     $height = wp_is_mobile() ? $imgItem->mediumSettings[2] : $imgItem->fullSettings[2];
