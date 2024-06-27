@@ -1,5 +1,6 @@
 <?php
 global $post;
+global $builder;
 $ecosystemIds = carbon_get_post_meta($post->ID, FIELDS_KEY['RELATIVE_ECOSYSTEM']);
 $ecosystem = null;
 $imgId = get_post_thumbnail_id($post);
