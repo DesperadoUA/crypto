@@ -1,0 +1,13 @@
+.figure_container {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+.figure_container img {
+    border-radius: 8px;
+}
+.figure_container figcaption {
+    color: var(--color_7);
+    font-style: italic;
+    font-weight: 600;
+}

@@ -34,11 +34,12 @@ function get_public_post_id($post_type, $limit = -1, $executeIds = []):array {
 }
 function get_img_item($img_id):ImgItem {
     $title = get_post_field( 'post_title', $img_id);
+    $description = (string)get_post_field('post_content', $img_id);
     $alt = get_post_meta( $img_id, '_wp_attachment_image_alt', true );
     $fullPath = wp_get_attachment_image_src($img_id, 'full');
     $mediumPath = wp_get_attachment_image_src($img_id, 'medium');
     $largePath = wp_get_attachment_image_src($img_id, 'large');
-    return new ImgItem($title, $alt, $fullPath, $mediumPath, $largePath);
+    return new ImgItem($title, $alt, $fullPath, $mediumPath, $largePath, $description);
 }
 class Relative {
     static function getRelativeOrderByRating($postId, $relativePostType, $relativeKey):array {
