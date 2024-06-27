@@ -26,3 +26,17 @@ class GameCardList {
         $this->posts = $posts;
     }
 }
+class GameCardTop {
+    public string $title = '';
+    public ImgItem|null $thumbnail;
+    public string $ref = '';
+    public string $bonus = '';
+    public LinkItem|null $ecosystem;
+    function __construct(string $title, $thumbnail, string $bonus, string $ref, LinkItem $ecosystem = null) {
+        $this->title = $title;
+        $this->thumbnail = $thumbnail;
+        $this->ref = $ref;
+        $this->bonus = $bonus;
+        $this->ecosystem = $ecosystem;
+    }
+}

@@ -31,4 +31,33 @@ trait Game {
         $str .= "</div>";
         return $str;
     }
+    public function gameCardTop(GameCardTop $data) {
+        $str =  "<section class='section_padding'>
+            <div class='container'>
+                <div class='game_top'><div class='game_top_left'>";
+        $str .= $this->picture($data->thumbnail);
+        $str .= "</div>";
+        $str .= "<div class='game_top_right'>";
+        $str .= "<div class='game_top_title'>";
+        $str .= $data->title;
+        $str .= "</div>";
+        $str .= "<div class='game_top_ecosystem'>";
+        $str .= "<a href='{$data->ecosystem->permalink}'>";
+        $str .= $data->ecosystem->title;
+        $str .= "</a>";
+        $str .= "</div>";
+        $str .= "<div class='game_top_value'>";
+        $str .= $data->bonus;
+        $str .= "</div>";
+        $str .= "<div class='game_top_action'>";
+        $str .= "<a href='{$data->ref}' class='game_top_action_btn btn_secondary'>"; 
+        $str .= $this->getTranslate('PLAY');
+        $str .= "</a>"; 
+        $str .= "</div>";
+        $str .= "</div>";
+        $str .= "</div>
+            </div>
+        </section>";
+        return $str;
+    }
 }

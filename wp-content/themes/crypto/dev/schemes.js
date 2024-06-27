@@ -58,7 +58,7 @@ module.exports.schemas = {
 		},
 		GAME: {
 			js: jsDI.concat([]),
-			css: cssDI.concat(['breadcrumb']),
+			css: cssDI.concat(['breadcrumb', 'game_top']),
 			fileName: 'gamePost'
 		},
 		NEWS: {

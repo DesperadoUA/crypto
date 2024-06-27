@@ -27,4 +27,5 @@ interface Builder {
     public function breadcrumb(LinkList $list);
     public function airdropCard(AirdropCardItem $post);
     public function airdropLoop(AirdropCardList $list);
+    public function gameCardTop(GameCardTop $data);
 }
