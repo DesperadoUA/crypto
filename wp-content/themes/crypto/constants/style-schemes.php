@@ -19,9 +19,9 @@ const TEMPLATES_DI_STYLE = [
     ],
     'POSTS' => [
         'BLOG'      => 'blogPost',
-        'GAME'      => 'game',
+        'GAME'      => 'gamePost',
         'AIRDROP'   => 'airdrop',
-        'ECOSYSTEM' => 'ecosystem',
+        'ECOSYSTEM' => 'ecosystemPost',
         'NEWS'      => 'newsPost',
         'PROJECT'   => 'project',
         'DEFAULT'   => 'default'
