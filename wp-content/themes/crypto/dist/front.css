@@ -813,8 +813,8 @@ img, iframe {
 .airdrop_card_col:nth-child(1) {
     width: 15%;
     gap:15px;
-    padding-right: 15px;
     padding-left: 0px;
+    padding-right: 15px;
 }
 .airdrop_card_col:nth-child(4), .airdrop_card_col:nth-child(5) {
     width: 20%;
