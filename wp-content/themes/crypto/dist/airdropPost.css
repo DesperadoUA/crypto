@@ -388,4 +388,95 @@ img, iframe {
     .breadcrumb {
         padding-bottom: 10px;
     }
+}.airdrop_card_top {
+    box-shadow: 0 4px 10px rgba(127, 162, 252, 0.25);
+    background: var(--color_3);
+    border-radius: var(--s);
+    display: flex;
+    padding: var(--m);
+    box-sizing: border-box;
+    gap: 15px 0px;
+}
+.airdrop_col {
+    box-sizing: border-box;
+} 
+.airdrop_col.col_1 img {
+    border-radius: 50%;
+}
+.airdrop_col.col_1 {
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    flex-wrap: wrap;
+    border-right: 2px solid var(--color_2);
+    padding-right: var(--m);
+}
+.airdrop_col.col_2, .airdrop_col.col_3, .airdrop_col.col_4 {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    flex-wrap: wrap;
+    border-right: 2px solid var(--color_2);
+    padding: var(--s);
+    font-weight: 700;
+}
+.airdrop_col.col_3 {
+    width: 30%;
+}
+.airdrop_col.col_5 {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    padding-left: 5px;
+}
+.airdrop_col_bonus {
+    color: var(--color_12);
+    font-weight: 700;
+    text-align: center;
+}
+.airdrop_col_activity {
+    text-align: center;
+}
+.airdrop_col_title, .airdrop_col_ecosystem {
+    width: 100%;
+    color: var(--7);
+    text-align: center;
+    font-weight: 600;
+    text-decoration: none;
+}
+@media (max-width: 768px) {
+    .airdrop_card_top {
+        flex-wrap: wrap;
+    }
+    .airdrop_col.col_1 {
+        width: 50%;
+        order: 1;
+    }
+    .airdrop_col.col_3 {
+        width: 50%;
+        order: 2;
+        border-right: none;
+    }
+    .airdrop_col.col_2, .airdrop_col.col_4, .airdrop_col.col_5 {
+        width: 33.3%;
+        order: 3;
+    }
+    .airdrop_col_bonus {
+        width: 100%;
+    }
+}
+@media (max-width: 500px) {
+    .airdrop_card_top {
+        gap: 5px 0px;
+    }
+    .airdrop_col.col_1, .airdrop_col.col_3, .airdrop_col.col_2, .airdrop_col.col_4, .airdrop_col.col_5 {
+        width: 100%;
+        order: 3;
+        border-right: none;
+    }
 }

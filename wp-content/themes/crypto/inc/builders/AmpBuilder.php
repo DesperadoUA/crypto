@@ -120,4 +120,7 @@ class AmpBuilder implements Builder {
     public function gameCardTop(GameCardTop $data):string {
         return '';
     }
+    public function airdropCardTop(AirdropCardTop $data):string {
+        return '';
+    }
 }

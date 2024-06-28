@@ -21,11 +21,12 @@ interface Builder {
     public function categoryLinks(LinkList $list);
     public function gameCard(GameCardItem $post);
     public function gameLoop(GameCardList $list);
+    public function gameCardTop(GameCardTop $data);
     public function reviews(ReviewPostSettings $postSettings, ReviewItemList $list);
     public function reviewsLoop(ReviewItemList $list);
     public function reviewsForm($postId);
     public function breadcrumb(LinkList $list);
     public function airdropCard(AirdropCardItem $post);
     public function airdropLoop(AirdropCardList $list);
-    public function gameCardTop(GameCardTop $data);
+    public function airdropCardTop(AirdropCardTop $data);
 }

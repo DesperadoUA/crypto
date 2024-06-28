@@ -48,7 +48,7 @@ module.exports.schemas = {
 		},
 		AIRDROP: {
 			js: jsDI.concat([]),
-			css: cssDI.concat(['breadcrumb']),
+			css: cssDI.concat(['breadcrumb', 'airdrop_top']),
 			fileName: 'airdropPost'
 		},
 		ECOSYSTEM: {

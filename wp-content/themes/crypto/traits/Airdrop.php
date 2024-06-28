@@ -49,4 +49,35 @@ trait Airdrop {
         $str .= "</div></section>";
         return $str;
     }
+    public function airdropCardTop(AirdropCardTop $data):string {
+        $str = "<section class='section_padding'>
+                    <div class='container airdrop_card_top'>";
+        $col_1 = "<div class='airdrop_col col_1'>
+                    {$this->picture($data->thumbnail)}
+                    <div class='airdrop_col_title'>{$data->title}</div>
+                  </div>";
+        $str .= $col_1;
+        $col_2 = "<div class='airdrop_col col_2'>
+                    <a href='{$data->ecosystem->permalink}' class='airdrop_col_ecosystem'>{$data->ecosystem->title}</a>
+                  </div>";
+        $str .= $col_2;
+        $col_3 = "<div class='airdrop_col col_3'>
+                    <div class='airdrop_col_bonus'>{$data->projectAward}</div>
+                    <div class='airdrop_col_bonus'>{$data->bonus}</div>
+                  </div>";
+        $str .= $col_3;
+        $activity = join(", ", $data->activity);
+        $col_4 = "<div class='airdrop_col col_4'>
+                    <div class='airdrop_col_activity'>{$activity}</div>
+                  </div>";
+        $str .= $col_4;
+        $col_5 = "<div class='airdrop_col col_5'>
+                    <div class='airdrop_col_action'>
+                        <a href='{$data->ref}' class='btn_secondary'>{$this->getTranslate('GO_TO')}</a>
+                    </div>
+                  </div>";
+        $str .= $col_5;
+        $str .= "</div></section>"; 
+        return $str;
+    }
 }
