@@ -24,6 +24,7 @@ const TEMPLATES_DI_STYLE = [
         'ECOSYSTEM' => 'ecosystemPost',
         'NEWS'      => 'newsPost',
         'PROJECT'   => 'project',
+        'AIRDROP'   => 'airdropPost',
         'DEFAULT'   => 'default'
     ],
     'CATEGORY' => [

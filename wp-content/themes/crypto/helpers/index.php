@@ -89,6 +89,9 @@ function getTemplate($post):string {
             case NEWS_POST_TYPE:
                 $template = 'NEWS';
                 break;
+            case AIRDROP_POST_TYPE:
+                $template = 'AIRDROP';
+                break;
             default:
                 $template = 'DEFAULT';
         }
