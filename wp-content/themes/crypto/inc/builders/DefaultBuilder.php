@@ -73,7 +73,7 @@ class DefaultBuilder implements Builder {
     }
     public function headerMenu(MenuData $data):string {
         if(empty($data->posts)) return "";
-        $html = "<nav class='header_nav' id='container-menu'>
+        $html = "<menu><nav class='header_nav' id='container-menu'>
                     <button class='menu_close' type='button' id='burger-close'></button>
                     <ul class='menu'>";
         foreach ($data->posts as $item) {
@@ -88,7 +88,7 @@ class DefaultBuilder implements Builder {
             }
             $html .= "</li>";
         }
-        $html .= "</ul></nav>";
+        $html .= "</ul></nav></menu>";
         return $html;
     }
     public function h1($str):string {

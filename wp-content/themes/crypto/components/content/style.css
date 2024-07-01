@@ -55,6 +55,52 @@
 .br-10 {
     border-radius: 10px;
 }
-.bg-white {
-    background: white;
+table {
+	 line-height: 1.6;
+	 box-shadow: 0 2px 14px rgba(4, 0, 26, 0.15);
+	 overflow: auto;
+	 -webkit-overflow-scrolling: touch;
+	 margin-bottom: 50px;
+	 border-spacing: 0;
+	 background-color: #fff;
+	 border-radius: 14px;
+	 border: 1px solid rgba(0, 0, 0, 0.2);
+	 display: block;
+	 width: 100%;
+     color: var(--color_7);
 }
+ table thead, table tbody {
+	 min-width: 500px;
+	 display: table;
+	 width: 100%;
+}
+ table thead td, table th {
+	 font-size: 18px;
+	 line-height: 1.556;
+	 background-color: var(--color_11);
+	 padding: 12px 10px 12px 24px;
+	 color: #fff;
+	 text-align: left;
+	 text-transform: uppercase;
+}
+ table thead td:first-child, table th:first-child {
+	 border-radius: 14px 0 0 0;
+	 width: 260px;
+}
+ table thead td:last-child, table th:last-child {
+	 border-radius: 0 14px 0 0;
+}
+ table tr:not(:last-child) td {
+	 border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+ table td {
+	 font-size: 18px;
+	 padding: 11px 10px 11px 24px;
+}
+ table td:first-child {
+	 width: 260px;
+}
+ table td img {
+	 vertical-align: middle;
+}
+ 

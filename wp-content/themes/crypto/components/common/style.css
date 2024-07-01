@@ -86,6 +86,9 @@ img, iframe {
 .success {
     color: var(--color_13);
 }
+.bg-white {
+    background: white;
+}
 @media (max-width: 767px) {
     .section_heading h1 {
         font-size: 28px;
