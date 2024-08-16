@@ -53,7 +53,7 @@ module.exports.schemas = {
 		},
 		ECOSYSTEM: {
 			js: jsDI.concat([]),
-			css: cssDI.concat(['breadcrumb']),
+			css: cssDI.concat(['breadcrumb', 'blog_card', 'news_card', 'section_title', 'game_card', 'airdrop_card']),
 			fileName: 'ecosystemPost'
 		},
 		GAME: {

@@ -92,6 +92,9 @@ function getTemplate($post):string {
             case AIRDROP_POST_TYPE:
                 $template = 'AIRDROP';
                 break;
+            case ECOSYSTEM_POST_TYPE:
+                $template = 'ECOSYSTEM';
+                break;
             default:
                 $template = 'DEFAULT';
         }
