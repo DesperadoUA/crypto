@@ -84,7 +84,7 @@ module.exports.schemas = {
 		},
 		AIRDROP_TAX: {
 			js: jsDI.concat(['faq']),
-			css: cssDI.concat(['faq', 'category_links', 'breadcrumb']),
+			css: cssDI.concat(['faq', 'category_links', 'breadcrumb', 'airdrop_card']),
 			fileName: 'airdropTax'
 		},
 		NEWS_TAX: {

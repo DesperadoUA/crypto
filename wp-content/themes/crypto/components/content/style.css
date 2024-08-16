@@ -71,7 +71,6 @@ table {
 }
  table thead, table tbody {
 	 min-width: 500px;
-	 display: table;
 	 width: 100%;
 }
  table thead td, table th, table caption {
@@ -111,4 +110,8 @@ td:not(:last-child) {
  table td img {
 	 vertical-align: middle;
 }
- 
+ @media (min-width: 767px) {
+    table thead, table tbody {
+        display: table;
+    }
+ }
