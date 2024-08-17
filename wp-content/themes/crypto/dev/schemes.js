@@ -43,7 +43,7 @@ module.exports.schemas = {
 	POSTS: {
 		BLOG: {
 			js: jsDI.concat(['faq', 'reviews']),
-			css: cssDI.concat(['faq', 'banner', 'reviews', 'breadcrumb']),
+			css: cssDI.concat(['faq', 'banner', 'reviews', 'breadcrumb', 'blog_card', 'section_title']),
 			fileName: 'blogPost'
 		},
 		AIRDROP: {
