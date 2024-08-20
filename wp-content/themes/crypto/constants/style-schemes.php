@@ -25,6 +25,7 @@ const TEMPLATES_DI_STYLE = [
         'NEWS'      => 'newsPost',
         'PROJECT'   => 'project',
         'AIRDROP'   => 'airdropPost',
+        'WIKI'      => 'wikiPost',
         'DEFAULT'   => 'default'
     ],
     'CATEGORY' => [

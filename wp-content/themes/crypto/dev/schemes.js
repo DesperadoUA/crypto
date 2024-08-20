@@ -71,6 +71,11 @@ module.exports.schemas = {
 			css: cssDI.concat(['breadcrumb']),
 			fileName: 'projectPost'
 		},
+		WIKI: {
+			js: jsDI.concat([]),
+			css: cssDI.concat(['breadcrumb']),
+			fileName: 'wikiPost'
+		},
 		...defaultDI
 	},
 	CATEGORY: {

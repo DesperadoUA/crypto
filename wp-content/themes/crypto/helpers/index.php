@@ -95,6 +95,9 @@ function getTemplate($post):string {
             case ECOSYSTEM_POST_TYPE:
                 $template = 'ECOSYSTEM';
                 break;
+            case WIKI_POST_TYPE:
+                $template = 'WIKI';
+                break;
             default:
                 $template = 'DEFAULT';
         }
