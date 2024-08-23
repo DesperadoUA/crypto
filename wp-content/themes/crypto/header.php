@@ -17,8 +17,10 @@
 <header class="header" name="top">
     <div class="container header_container">
         <?php include 'components/header/logo/dal.php' ?>
-        <button class="menu_toggle" type="button" id="burger"></button>
-        <?php include 'components/header/menu/dal.php' ?>
+        <div>
+            <button class="menu_toggle" type="button" id="burger"></button>
+            <?php include 'components/header/menu/dal.php' ?>
+        </div>
     </div>
 </header>
 <main>
