@@ -51,91 +51,92 @@ function parseAmpContent($content) {
     return $content;
 }
 function getTemplate($post):string {
-    $template = '';
-    if (is_page() or $post->ID === ID_FRONT) {
-        switch ($post->ID) {
-            case ID_FRONT:
-                $template = 'FRONT_PAGE';
-                break;
-            case ID_BLOG:
-                $template = 'BLOG_PAGE';
-                break;
-            case ID_NEWS:
-                $template = 'NEWS_PAGE';
-                break;
-            case ID_GAMES:
-                $template = 'GAMES_PAGE';
-                break;
-            case ID_PROJECTS:
-                $template = 'PROJECTS_PAGE';
-                break;
-            case ID_AIRDROPS:
-                $template = 'AIRDROPS_PAGE';
-                break;
-            case ID_ECOSYSTEM:
-                $template = 'ECOSYSTEMS_PAGE';
-                break;
-            default:
-                $template = 'DEFAULT';
+    $template = 'DEFAULT';
+    if(!is_404()) {
+         if (is_page() or $post->ID === ID_FRONT) {
+                switch ($post->ID) {
+                    case ID_FRONT:
+                        $template = 'FRONT_PAGE';
+                        break;
+                    case ID_BLOG:
+                        $template = 'BLOG_PAGE';
+                        break;
+                    case ID_NEWS:
+                        $template = 'NEWS_PAGE';
+                        break;
+                    case ID_GAMES:
+                        $template = 'GAMES_PAGE';
+                        break;
+                    case ID_PROJECTS:
+                        $template = 'PROJECTS_PAGE';
+                        break;
+                    case ID_AIRDROPS:
+                        $template = 'AIRDROPS_PAGE';
+                        break;
+                    case ID_ECOSYSTEM:
+                        $template = 'ECOSYSTEMS_PAGE';
+                        break;
+                    default: $template = 'DEFAULT';
+            }
+        } else if (is_single()) {
+            switch ($post->post_type) {
+                case BLOG_POST_TYPE:
+                    $template = 'BLOG';
+                    break;
+                case GAME_POST_TYPE:
+                    $template = 'GAME';
+                    break;
+                case NEWS_POST_TYPE:
+                    $template = 'NEWS';
+                    break;
+                case AIRDROP_POST_TYPE:
+                    $template = 'AIRDROP';
+                    break;
+                case ECOSYSTEM_POST_TYPE:
+                    $template = 'ECOSYSTEM';
+                    break;
+                case WIKI_POST_TYPE:
+                    $template = 'WIKI';
+                    break;
+                default: $template = 'DEFAULT';
+            }
+        } else if (is_category()) {
+            $category = get_queried_object();
+            switch ($category->cat_ID) {
+                default: $template = 'DEFAULT';
+            }
+        } else if (is_tax()) {
+            $tax = get_queried_object();
+            switch ($tax->taxonomy) {
+                case BLOG_TAX:
+                    $template = 'BLOG_TAX';
+                    break;
+                case AIRDROP_TAX:
+                    $template = 'AIRDROP_TAX';
+                    break;
+                case NEWS_TAX:
+                    $template = 'NEWS_TAX';
+                    break;
+                case GAME_TAX:
+                    $template = 'GAME_TAX';
+                    break;
+                default:
+                    $template = 'DEFAULT';
+            }
         }
-    } else if (is_single()) {
-        switch ($post->post_type) {
-            case BLOG_POST_TYPE:
-                $template = 'BLOG';
-                break;
-            case GAME_POST_TYPE:
-                $template = 'GAME';
-                break;
-            case NEWS_POST_TYPE:
-                $template = 'NEWS';
-                break;
-            case AIRDROP_POST_TYPE:
-                $template = 'AIRDROP';
-                break;
-            case ECOSYSTEM_POST_TYPE:
-                $template = 'ECOSYSTEM';
-                break;
-            case WIKI_POST_TYPE:
-                $template = 'WIKI';
-                break;
-            default:
-                $template = 'DEFAULT';
-        }
-    } else if (is_category()) {
-        $category = get_queried_object();
-        switch ($category->cat_ID) {
-            default:
-                $template = 'DEFAULT';
-        }
-    } else if (is_tax()) {
-        $tax = get_queried_object();
-        switch ($tax->taxonomy) {
-            case BLOG_TAX:
-                $template = 'BLOG_TAX';
-                break;
-            case AIRDROP_TAX:
-                $template = 'AIRDROP_TAX';
-                break;
-            case NEWS_TAX:
-                $template = 'NEWS_TAX';
-                break;
-            case GAME_TAX:
-                $template = 'GAME_TAX';
-                break;
-            default:
-                $template = 'DEFAULT';
-        }
-    } else {
-        $template = 'DEFAULT';
     }
     return $template;
 }
 function getPostType($post):string {
-    if (is_page() or $post->ID === ID_FRONT) return 'PAGES';
-    else if (is_single()) return 'POSTS';
-    else if (is_category()) return 'CATEGORY';
-    else if (is_tax()) return 'TAX';
-    else return 'POSTS';
+    if(!is_404()) {
+        if (is_page() or $post->ID === ID_FRONT) return 'PAGES';
+        else if (is_single()) return 'POSTS';
+        else if (is_category()) return 'CATEGORY';
+        else if (is_tax()) return 'TAX';
+        else return 'POSTS';
+    } else {
+        return 'POSTS';
+    }
 }
 function url_to_post_id($url, $post_type):int {
     $query = new WP_Query( array(

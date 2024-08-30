@@ -63,7 +63,7 @@ module.exports.schemas = {
 		},
 		NEWS: {
 			js: jsDI.concat([]),
-			css: cssDI.concat(['breadcrumb']),
+			css: cssDI.concat(['breadcrumb', 'banner']),
 			fileName: 'newsPost'
 		},
 		PROJECT: {

@@ -7,7 +7,7 @@ function img_fields() {
         [
             'container_label' => 'Banner',
             'label' => 'Banner 1240x400',
-            'post_types' => ['blog'],
+            'post_types' => ['blog', 'news'],
             'key' => FIELDS_KEY['BANNER'],
             'editor' => 'image'
         ]

@@ -448,4 +448,18 @@ td:not(:last-child) {
     .breadcrumb {
         padding-bottom: 10px;
     }
+}.banner {
+    padding-top: 30px;
+    text-align: center;
+}
+.banner img {
+    border: 9px solid var(--color_4);
+    border-radius: var(--s);
+    max-width: 100%;
+    box-sizing: border-box;
+}
+@media (max-width: 767px) {
+    .banner {
+        padding-top: 15px;
+    }
 }
