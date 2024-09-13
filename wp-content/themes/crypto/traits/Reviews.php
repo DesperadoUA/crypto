@@ -91,12 +91,15 @@ trait Reviews {
         </div>";
     }
     public function reviews(ReviewPostSettings $postSettings, ReviewItemList $list) {
+        $microSchemaHtml_1 = count($list->posts) ? "itemprop='review' itemscope itemtype='http://schema.org/Review'" : '';
+        $microSchemaHtml_2 = count($list->posts) ? "<div itemprop='itemReviewed' itemscope itemtype='https://schema.org/Organization'>
+                                                <meta itemprop='name' content='{$postSettings->title}' />
+                                            </div>" : '';
+        $microSchemaHtml_3 = count($list->posts) ? "itemprop='name'" : '';
         $str = "<section class='review'>
-                    <div class='comments container' itemprop='review' itemscope itemtype='http://schema.org/Review'>
-                        <div itemprop='itemReviewed' itemscope itemtype='https://schema.org/Organization'>
-                            <meta itemprop='name' content='{$postSettings->title}' />
-                        </div>
-                    <div class='comments_title' itemprop='name'>📌 {$this->getTranslate('REVIEWS')}</div>";
+                    <div class='comments container' {$microSchemaHtml_1}>
+                        {$microSchemaHtml_2}
+                    <div class='comments_title' {$microSchemaHtml_3}>📌 {$this->getTranslate('REVIEWS')}</div>";
         $str .= $this->reviewsLoop($list);
         $str .= $this->reviewsForm($postSettings->id);
         $str .= "</div></section>";

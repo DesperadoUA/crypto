@@ -2,15 +2,15 @@
 class AirdropCardItem {
     public $title = '';
     public $permalink = '';
-    public string $thumbnail = '';
-    public string $ref = '';
-    public string $bonus = '';
-    public LinkItem|null $ecosystem;
-    public string|null $rating;
-    public array $activity;
-    public string $projectAward;
-    public string $status;
-    public string $statusKey;
+    public $thumbnail = '';
+    public $ref = '';
+    public $bonus = '';
+    public $ecosystem;
+    public $rating;
+    public $activity;
+    public $projectAward;
+    public $status;
+    public $statusKey;
     function __construct(string $title, string $permalink, string $thumbnail, string $bonus, string $ref, $rating = 0, 
         $activity = [], 
         $project_award = '', 
@@ -41,15 +41,15 @@ class AirdropCardList {
     }
 }
 class AirdropCardTop {
-    public string $title = '';
-    public ImgItem|null $thumbnail;
-    public string $ref = '';
-    public string $bonus = '';
-    public LinkItem|null $ecosystem;
-    public array $activity;
-    public string $projectAward;
-    public string $status;
-    public string $statusKey;
+    public $title = '';
+    public $thumbnail;
+    public $ref = '';
+    public $bonus = '';
+    public $ecosystem;
+    public $activity;
+    public $projectAward;
+    public $status;
+    public $statusKey;
     function __construct(string $title, $thumbnail, string $bonus, string $ref,  $activity = [], $project_award = '', $status = '', 
         $statusKey, LinkItem $ecosystem = null) {
         $this->title = $title;

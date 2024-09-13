@@ -1,3 +1,3 @@
 <?php
 global $builder;
-echo $builder->canonical();
+// echo $builder->canonical();
