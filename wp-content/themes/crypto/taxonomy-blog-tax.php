@@ -7,6 +7,7 @@
             <?php include 'components/blog_loop_tax/dal.php'; ?>
         </div>
     </section>
+    <?php include 'components/load_more_blog/dal.php'; ?>
     <div class="section_padding">
         <?php include 'components/content/dal.php'; ?>
     </div>

@@ -9,8 +9,8 @@ module.exports.schemas = {
 			fileName: 'front'
 		},
 		BLOG_PAGE: {
-			js: jsDI.concat(['faq']),
-			css: cssDI.concat(['faq', 'blog_card', 'category_links', 'breadcrumb']),
+			js: jsDI.concat(['faq', 'loader']),
+			css: cssDI.concat(['faq', 'blog_card', 'category_links', 'breadcrumb', 'loader']),
 			fileName: 'blog'
 		},
 		NEWS_PAGE: {
@@ -83,8 +83,8 @@ module.exports.schemas = {
 	},
 	TAX: {
 		BLOG_TAX: {
-			js: jsDI.concat(['faq']),
-			css: cssDI.concat(['faq', 'blog_card', 'category_links', 'breadcrumb']),
+			js: jsDI.concat(['faq', 'loader']),
+			css: cssDI.concat(['faq', 'blog_card', 'category_links', 'breadcrumb', 'loader']),
 			fileName: 'blogTax'
 		},
 		AIRDROP_TAX: {

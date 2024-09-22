@@ -18,7 +18,7 @@ function get_public_post_id_by_rating($post_type, $limit = -1, $executeIds = [])
     foreach ($query->posts as $item ) $arr_id[] = $item->ID;
     return $arr_id;
 }
-function get_public_post_id($post_type, $limit = -1, $executeIds = []):array {
+function get_public_post_id($post_type, $limit = -1, $executeIds = [], $offset = 0):array {
     $arr_id = [];
     $query = new WP_Query( array(
         'posts_per_page' => $limit,
@@ -27,6 +27,7 @@ function get_public_post_id($post_type, $limit = -1, $executeIds = []):array {
         'orderby'        => 'date',
         'order'          => 'DESC',
         'post__not_in'   => $executeIds,
+        'offset'         => $offset,
     ));
     if(empty($query->posts)) return $arr_id;
     foreach ($query->posts as $item ) $arr_id[] = $item->ID;
@@ -92,7 +93,8 @@ class Relative {
             'post_status'    => 'publish',
             'orderby'        => 'date',
             'order'          => 'DESC',
-            'post__not_in'    => $settings->executeIds,
+            'post__not_in'   => $settings->executeIds,
+            'offset'         => $settings->offset,
             'tax_query' => array(
                 array(
                     'taxonomy' => $settings->taxonomy,

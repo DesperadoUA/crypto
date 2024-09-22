@@ -5,3 +5,5 @@ const HTML_ATTRS = ["RU" => "ru", "UA" => "uk"];
 const LANG = "RU";
 define("TEMPLATE_DIR_URI", get_template_directory_uri());
 define("SITE_URL", get_site_url());
+const SUCCESS_STATUS = 'ok';
+const ERROR_STATUS = 'error';

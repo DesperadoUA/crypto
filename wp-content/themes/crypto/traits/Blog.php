@@ -24,7 +24,7 @@ trait Blog {
                             <div class='blog_card_desc'>{$post->excerpt}</div>
                         </div>
                         <div class='blog_card_bottom'>
-                            <a href='{$post->permalink}' title=`{$post->title}` class='blog_card_read_more'>";
+                            <a href='{$post->permalink}' title='{$post->title}' class='blog_card_read_more'>";
         $str .= $this->getTranslate('READ_MORE');
         $str .= "</a></div></div>
                 </article>";

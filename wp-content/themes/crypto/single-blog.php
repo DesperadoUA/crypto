@@ -6,7 +6,9 @@
         <?php include 'components/content/dal.php'; ?>
     </div>
     <?php include 'components/faq/dal.php'; ?>
-    <?= $builder->headingSection('ARTICLES'); ?>
+    <div class="section_padding">
+        <?= $builder->headingSection('ARTICLES'); ?>
+    </div>
     <div class="section_padding">
         <div class="container">
             <?php include 'components/blog_loop_posts/dal.php'; ?>

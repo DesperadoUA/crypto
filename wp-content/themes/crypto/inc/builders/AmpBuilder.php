@@ -123,4 +123,7 @@ class AmpBuilder implements Builder {
     public function airdropCardTop(AirdropCardTop $data):string {
         return '';
     }
+    public function loader(LoaderSettings $data) {
+        return '';
+    }
 }

@@ -29,4 +29,5 @@ interface Builder {
     public function airdropCard(AirdropCardItem $post);
     public function airdropLoop(AirdropCardList $list);
     public function airdropCardTop(AirdropCardTop $data);
+    public function loader(LoaderSettings $data);
 }

@@ -138,4 +138,17 @@ class DefaultBuilder implements Builder {
         $str .= "</div></section>";
         return $str;
     }
+    public function loader(LoaderSettings $data) {
+        return "<section class='loader'>
+            <div class='container loader_container'>
+                <button class='loader_btn'
+                    data-tax_id='{$data->taxId}'
+                    data-post_type='{$data->postType}'
+                    data-number_posts_on_query='{$data->numberPostsOnQuery}'
+                    data-total_posts='{$data->totalPosts}'
+                    data-container='{$data->container}'
+                >{$this->getTranslate('LOAD_MORE')}</button>
+            </div>
+        </section>";
+    }
 }

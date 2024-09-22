@@ -1,0 +1,26 @@
+.loader {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.loader_container {
+    display: flex;
+    justify-content: center;
+}
+.loader_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 25px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 110%;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.5s;
+    color: var(--color_3);
+    border: 2px solid var(--color_3);
+    border-radius: var(--s);
+    background: var(--color_5);
+    cursor: pointer;
+}
