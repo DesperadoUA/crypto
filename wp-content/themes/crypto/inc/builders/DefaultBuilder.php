@@ -6,6 +6,7 @@ class DefaultBuilder implements Builder {
     use Blog;
     use News;
     use Airdrop;
+    use Footer;
     private $ampPrefix = PREFIX_AMP;
     private $translate = TRANSLATE;
     private $lang = LANG;
@@ -37,9 +38,6 @@ class DefaultBuilder implements Builder {
     }
     public function header():string {
         return "<header>Default Header</header>";
-    }
-    public function footer():string {
-        return "<footer>Default Footer</footer>";
     }
     public function content($content):string {
         return "<section class='default_cms'>

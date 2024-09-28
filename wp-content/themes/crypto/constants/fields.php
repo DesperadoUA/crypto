@@ -4,7 +4,8 @@ const SETTINGS_KEYS = [
 ];
 const OPTIONS_KEYS = [
     'LOGO' => 'logo',
-    'FOOTER_TEXT' => 'footer_text'
+    'FOOTER_TEXT' => 'footer_text',
+    'FOOTER_MENU' => 'footer_menu'
 ];
 const FIELDS_KEY = [
     'FAQ' => 'faq',
