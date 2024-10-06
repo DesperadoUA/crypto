@@ -30,3 +30,20 @@ class FooterLinkList {
         $this->posts = $posts;
     }
 }
+class FeedbackItem {
+    public $title;
+    public $permalink;
+    public $img;
+    function __construct($title, $permalink, $img) {
+        $this->title = $title;
+        $this->permalink = $permalink;
+        $this->img = $img;
+    }
+}
+class FeedbackList {
+    /** @var FeedbackItem[] */
+    public $posts = [];
+    function __construct(array $posts) {
+        $this->posts = $posts;
+    }
+}

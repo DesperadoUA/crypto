@@ -19,5 +19,12 @@ function crb_attach_theme_options():void {
                         ),
                     )
             ),
+            Field::make( 'complex',  OPTIONS_KEYS['FEEDBACK'], 'Feedback')
+                        ->add_fields( array(
+                            Field::make('image', 'icon', 'Site icon')->set_width( 33 ),
+                            Field::make('text', 'link', 'Site link')->set_width( 33 ),
+                            Field::make('text', 'text', 'Text link')->set_width( 33 ),
+                            )
+                        ),
         ));
 }

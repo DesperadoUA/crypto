@@ -5,7 +5,7 @@ interface Builder {
     public function styles($str);
     public function canonical();
     public function wp_footer();
-    public function footer(FooterLinkList $linkList, string $footerText);
+    public function footer(FooterLinkList $linkList, string $footerText, FeedbackList $feedback);
     public function header();
     public function content($content);
     public function faq(Faq $faq);

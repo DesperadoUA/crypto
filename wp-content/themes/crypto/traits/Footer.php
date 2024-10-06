@@ -1,11 +1,13 @@
 <?php
 trait Footer {
-    public function footer(FooterLinkList $linkList, string $footerText) {
+    public function footer(FooterLinkList $linkList, string $footerText, FeedbackList $feedback) {
         $text = $this->footerText($footerText);
         $menu = $this->footerListMenu($linkList);
+        $feedbackHtml = $this->footerFeedback($feedback);
         $str = "<footer class='footer'>
                     <div class='container'>
                         {$menu}
+                        {$feedbackHtml}
                         {$text}
                     </div>
                 </footer>";
@@ -37,5 +39,16 @@ trait Footer {
     }
     public function footerText(string $str) {
         return "<div class='footer_text'>{$str}</div>";
+    }
+    public function footerFeedback(FeedbackList $list) {
+        if(!count($list->posts)) return "";
+        $html = "<div class='footer_feedback_wrapper'>";
+        foreach($list->posts as $item) {
+            $html .= "<div class='footer_feedback_item'>";
+            $html .= "<a href='{$item->permalink}'><img src='{$item->img->fullSettings[0]}' loading='lazy' width='21' height='21' alt='{$item->img->alt}' /> {$item->title}</a>";
+            $html .= "</div>";
+        }
+        $html .= "</div>";
+        return $html;
     }
 }

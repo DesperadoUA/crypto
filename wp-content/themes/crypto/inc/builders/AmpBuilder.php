@@ -53,7 +53,7 @@ class AmpBuilder implements Builder {
         return "<header>AMP Header</header>
             <amp-script layout='container' src='{$filePath}'>";
     }
-    public function footer(FooterLinkList $linkList, string $footerText):string {
+    public function footer(FooterLinkList $linkList, string $footerText, FeedbackList $feedback):string {
         return "<footer>AMP Footer</footer></amp-script>";
     }
     public function content($content):string {
