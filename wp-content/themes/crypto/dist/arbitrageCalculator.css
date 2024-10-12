@@ -567,8 +567,10 @@ label {
         gap: 20px;
     }
 }.arbitrage_calculator {
-    padding: 15px 5px;
-    border: 1px solid var(--color_s);
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(127, 162, 252, 0.25);
+    background: var(--color_3);
+    border-radius: var(--s);
 }
 .input_wrapper {
     flex-grow: 1;
