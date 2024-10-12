@@ -7,6 +7,7 @@ class DefaultBuilder implements Builder {
     use News;
     use Airdrop;
     use Footer;
+    use ArbitrageCalculator;
     private $ampPrefix = PREFIX_AMP;
     private $translate = TRANSLATE;
     private $lang = LANG;

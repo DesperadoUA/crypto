@@ -6,16 +6,18 @@ define('ID_GAMES', url_to_post_id('games', 'page'));
 define('ID_ECOSYSTEM', url_to_post_id('ecosystems', 'page'));
 define('ID_PROJECTS', url_to_post_id('projects', 'page'));
 define('ID_AIRDROPS', url_to_post_id('airdrops', 'page'));
+define('ID_ARBITRAGE_CALCULATOR', url_to_post_id('kalkulyator-dlya-rascheta-pribyli-na-arbitrazhnyh-sdelkah', 'page'));
 const TEMPLATES_DI_STYLE = [
     'PAGES' => [
-        'FRONT_PAGE'      => 'front',
-        'BLOG_PAGE'       => 'blog',
-        'NEWS_PAGE'       => 'news',
-        'GAMES_PAGE'      => 'games',
-        'PROJECTS_PAGE'   => 'projects',
-        'AIRDROPS_PAGE'   => 'airdrops',
-        'ECOSYSTEMS_PAGE' => 'ecosystems',
-        'DEFAULT'         => 'default'
+        'FRONT_PAGE'                => 'front',
+        'BLOG_PAGE'                 => 'blog',
+        'NEWS_PAGE'                 => 'news',
+        'GAMES_PAGE'                => 'games',
+        'PROJECTS_PAGE'             => 'projects',
+        'AIRDROPS_PAGE'             => 'airdrops',
+        'ECOSYSTEMS_PAGE'           => 'ecosystems',
+        'ARBITRAGE_CALCULATOR_PAGE' => 'arbitrageCalculator',
+        'DEFAULT'                   => 'default',
     ],
     'POSTS' => [
         'BLOG'      => 'blogPost',

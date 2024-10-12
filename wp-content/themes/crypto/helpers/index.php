@@ -76,6 +76,9 @@ function getTemplate($post):string {
                     case ID_ECOSYSTEM:
                         $template = 'ECOSYSTEMS_PAGE';
                         break;
+                    case ID_ARBITRAGE_CALCULATOR:
+                        $template = 'ARBITRAGE_CALCULATOR_PAGE';
+                        break;
                     default: $template = 'DEFAULT';
             }
         } else if (is_single()) {

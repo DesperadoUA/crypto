@@ -113,6 +113,15 @@ img, iframe {
 .bg-white {
     background: white;
 }
+.text_black {
+    color: var(--color_2);
+}
+.text_red {
+    color: var(--color_12);
+}
+.text_green {
+    color: var(--color_13);
+}
 @media (max-width: 767px) {
     .section_heading h1 {
         font-size: 28px;

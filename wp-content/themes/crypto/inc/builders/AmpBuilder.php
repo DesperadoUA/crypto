@@ -126,4 +126,7 @@ class AmpBuilder implements Builder {
     public function loader(LoaderSettings $data) {
         return '';
     }
+    public function arbitrageCalculator():string {
+        return '';
+    }
 }

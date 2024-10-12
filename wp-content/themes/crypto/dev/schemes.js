@@ -38,6 +38,11 @@ module.exports.schemas = {
 			css: cssDI.concat(['category_links', 'breadcrumb']),
 			fileName: 'ecosystems'
 		},
+		ARBITRAGE_CALCULATOR_PAGE: {
+			js: jsDI.concat(['arbitrage_calculator']),
+			css: cssDI.concat(['breadcrumb', 'ui', 'arbitrage_calculator']),
+			fileName: 'arbitrageCalculator'
+		},
 		...defaultDI
 	},
 	POSTS: {
