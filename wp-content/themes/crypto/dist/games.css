@@ -222,7 +222,10 @@ table caption {
  table thead td:first-child, table th:first-child {
 	 width: 260px;
 }
- table tr:not(:last-child) td {
+.pluses thead td:first-child, .pluses th:first-child {
+	width: 50%;
+}
+table tr:not(:last-child) td {
 	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 td:not(:last-child) {
@@ -234,6 +237,9 @@ td:not(:last-child) {
 }
  table td:first-child {
 	 width: 260px;
+}
+.pluses td:first-child {
+	width: 50%;
 }
  table td img {
 	 vertical-align: middle;
