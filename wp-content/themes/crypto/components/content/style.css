@@ -116,6 +116,47 @@ td:not(:last-child) {
  table td img {
 	 vertical-align: middle;
 }
+.cms blockquote {
+    margin: 16px 16px 30px 16px;
+    padding: 26px 24px;
+    font-size: 16px;
+    background: var(--color_4);
+    border-left: 5px solid;
+    border-color: var(--color_11);
+}
+.cms blockquote p {
+     font-style: italic;
+}
+.cms blockquote::after {
+    content: '';
+    margin-top: -30px;
+    padding-top: 0;
+    position: relative;
+    bottom: -50px;
+    left: 20px;
+    border-width: 30px 0 0 30px;
+    border-style: solid;
+    border-color: var(--color_4) transparent;
+    display: block;
+    width: 0;
+}
+.cms blockquote cite {
+    float: right;
+    font-size: 13px;
+}
+.cms blockquote cite:before {
+    content: '- ';
+}
+
+.attention {
+    border: 2px solid var(--color_12);
+    font-size: 16px;
+    font-style: italic;
+    margin: 16px 31px 41px 16px!important;
+    padding: 16px 24px;
+    position: relative;
+    box-shadow: 15px 15px 0 0 var(--color_12);
+}
  @media (min-width: 767px) {
     table thead, table tbody {
         display: table;

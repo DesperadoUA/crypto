@@ -6,8 +6,12 @@
 .figure_container img {
     border-radius: 8px;
 }
-.figure_container figcaption {
+.figure_container figcaption, .gallery_container figcaption {
     color: var(--color_7);
     font-style: italic;
     font-weight: 600;
+    margin-top: 15px;
+}
+figure {
+    text-align: center;
 }

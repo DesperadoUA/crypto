@@ -2,9 +2,13 @@
 add_shortcode( 'nav_menu', 'nav_menu_shortcode');
 function nav_menu_shortcode() {
     global $post;
-    $string = $post->post_content;
-    $content = carbon_get_post_meta( $post->ID, 'content_2' );
-    $string .= $content;
+    $string = '';
+    if(is_tax()) {
+        $category = get_queried_object();
+        $string .=  (string)carbon_get_term_meta($category->term_id, FIELDS_KEY['CONTENT']);
+    } else {
+        $string = $post->post_content;
+    }
     preg_match_all('/<h\d>([^<]*)<\/h\d>/', $string, $matches);
     if(!empty($matches)) {
         $arr_headers = [];

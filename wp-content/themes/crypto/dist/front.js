@@ -6,6 +6,14 @@ const TRANSLATE = {
 	}
 }
 {
+	const refButtons = document.querySelectorAll('.ref_activate')
+	refButtons.forEach(btn => {
+		btn.addEventListener('click', () => {
+			if (btn.dataset.href) window.open(btn.dataset.href, '_blank')
+		})
+	})
+}
+{
     function menu () {
         const burger = document.querySelector('#burger')
         const burgerClose = document.querySelector('#burger-close')

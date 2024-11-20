@@ -32,9 +32,9 @@ trait Airdrop {
                 </div>
             </div>
             <div class='airdrop_card_col airdrop_card_action'>
-                <a href='{$post->ref}' class='airdrop_card_btn btn_primary'>
+                <button data-href='{$post->ref}' class='airdrop_card_btn ref_activate btn_primary'>
                     {$this->getTranslate('GO_TO')}
-                </a>
+                </button>
                 <a href='{$post->permalink}' class='airdrop_card_btn btn_secondary'>
                     {$this->getTranslate('REVIEW')}
                 </a>
@@ -73,7 +73,7 @@ trait Airdrop {
         $str .= $col_4;
         $col_5 = "<div class='airdrop_col col_5'>
                     <div class='airdrop_col_action'>
-                        <a href='{$data->ref}' class='btn_secondary'>{$this->getTranslate('GO_TO')}</a>
+                        <button data-href='{$data->ref}' class='btn_secondary ref_activate'>{$this->getTranslate('GO_TO')}</button>
                     </div>
                   </div>";
         $str .= $col_5;

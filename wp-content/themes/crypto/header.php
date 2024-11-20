@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet" disabled>
     <?php
     include 'components/head/dal.php';
+    include 'components/canonical/view.php';
     include 'components/styles/dal.php';
     ?>
 </head>

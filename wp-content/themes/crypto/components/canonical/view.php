@@ -1,3 +1,3 @@
 <?php
 global $builder;
-// echo $builder->canonical();
+echo is_tax() ? $builder->canonical() : '';

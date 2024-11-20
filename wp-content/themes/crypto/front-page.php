@@ -2,9 +2,13 @@
 global $builder;
 ?>
 <?php get_header(); ?>
-<div class="mt_30">
+<?php include 'components/h1/dal.php'; ?>
+<section class="section_padding">
+<?php
+    include 'components/content/dal.php';
+?>
+</section>
 <?= $builder->headingSection('LAST_NEWS'); ?>
-</div>
 <section class="section_padding">
     <div class="container">
         <?php include 'components/news_loop_main_page/dal.php'; ?>
@@ -25,12 +29,6 @@ global $builder;
             include 'components/blog_loop_main_page/dal.php';
         ?>
     </div>
-</section>
-<?php include 'components/h1/dal.php'; ?>
-<section class="section_padding">
-<?php
-    include 'components/content/dal.php';
-?>
 </section>
 <?php get_footer(); ?>
 

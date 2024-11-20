@@ -16,7 +16,16 @@ class DefaultBuilder implements Builder {
     public function wp_head(HeadData $data):string {
         wp_head();
         return "<title>{$data->title}</title>
-              <meta name='description' content='{$data->description}'>";
+              <meta name='description' content='{$data->description}'>
+              <meta property='og:locale' content='{$data->ogLocale}' data-qmeta='ogLocale'>
+              <meta property='og:site_name' content='{$data->ogSiteName}' data-qmeta='ogSiteName'>
+              <meta property='og:type' content='{$data->ogType}' data-qmeta='ogType'>
+              <meta property='og:title' content='{$data->title}' data-qmeta='ogTitle'>
+              <meta property='og:description' content='{$data->description}' data-qmeta='ogDescription'>
+              <meta property='og:url' content='{$data->ogUrl}' data-qmeta='ogUrl'>
+              <meta property='og:image' content='{$data->ogImage}'>
+              <meta property='og:image:secure_url' content='{$data->ogImage}'>
+              ";
     }
     public function styles($str):string {
         return "<style>{$str}</style>";
