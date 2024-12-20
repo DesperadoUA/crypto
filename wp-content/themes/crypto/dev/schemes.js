@@ -1,4 +1,4 @@
-const cssDI = ['fonts', 'variable', 'common', 'content', 'header', 'footer', 'nav_menu']
+const cssDI = ['fonts', 'variable', 'common', 'content', 'header', 'footer', 'nav_menu', 'ref']
 const jsDI = ['common', 'header', 'nav_menu', 'video']
 const defaultDI = { DEFAULT: { js: jsDI, css: cssDI, fileName: 'default' } }
 module.exports.schemas = {
