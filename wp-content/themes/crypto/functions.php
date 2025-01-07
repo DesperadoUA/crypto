@@ -1,4 +1,5 @@
 <?php
+remove_action( 'wp_head', 'rest_output_link_wp_head' );
 include 'helpers/index.php';
 autoloadFilesInDirectory(__DIR__."/constants/");
 autoloadFilesInDirectory(__DIR__."/interfaces/");

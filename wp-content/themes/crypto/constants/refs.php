@@ -6,5 +6,7 @@ const REFS = [
     'OKX' => 'https://okx.com/join/58743682',
     'BINGX' => 'https://bingx.com/invite/3QUX6X/',
     'HTX' => 'https://www.htx.com/invite/ru-ru/1f?invite_code=yxe94223',
-    'KUCOIN' => 'https://www.kucoin.com/r/rf/QBAVZD5Z'
+    'KUCOIN' => 'https://www.kucoin.com/r/rf/QBAVZD5Z',
+	'TROJAN_BOT' => 'https://t.me/solana_trojanbot?start=r-lazarev_konstan',
+    'BANANA_GUN_BOT' => 'https://t.me/BananaGunSniper_bot?start=ref_desperado'
 ];
