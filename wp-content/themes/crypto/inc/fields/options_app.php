@@ -7,6 +7,7 @@ function crb_attach_theme_options():void {
     Container::make( 'theme_options', __( 'Options' ) )
         ->add_fields(array(
             Field::make('image', OPTIONS_KEYS['LOGO'], 'Logo')->set_value_type( 'url' ),
+            Field::make('text', OPTIONS_KEYS['LANG'], 'Язык сайта'),
             Field::make('text', OPTIONS_KEYS['FOOTER_TEXT'], 'Footer text'),
             Field::make( 'complex', OPTIONS_KEYS['FOOTER_MENU'], 'Footer menu')
                 ->add_fields( array(

@@ -4,6 +4,7 @@ const SETTINGS_KEYS = [
 ];
 const OPTIONS_KEYS = [
     'LOGO' => 'logo',
+    'LANG' => 'lang',
     'FOOTER_TEXT' => 'footer_text',
     'FOOTER_MENU' => 'footer_menu',
     'FEEDBACK' => 'feedback'
@@ -26,5 +27,6 @@ const FIELDS_KEY = [
     'RATING' => 'rating',
     'ACTIVITY' => 'activity',
     'PROJECT_AWARD' => 'project_award',
-    'AIRDROP_STATUS' => 'airdrop_status'
+    'AIRDROP_STATUS' => 'airdrop_status',
+    'LANG_TRANSLATE' => 'lang_translate'
 ];

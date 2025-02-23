@@ -9,5 +9,11 @@ const REFS = [
     'KUCOIN' => 'https://www.kucoin.com/r/rf/QBAVZD5Z',
 	'TROJAN_BOT' => 'https://t.me/solana_trojanbot?start=r-lazarev_konstan',
     'BANANA_GUN_BOT' => 'https://t.me/BananaGunSniper_bot?start=ref_desperado',
-    'SUSHI' => 'https://www.sushi.com/arbitrum/swap?referrer=0x05455654e18A890e8739101263a19Db65337bcC9'
+    'SUSHI' => 'https://www.sushi.com/arbitrum/swap?referrer=0x05455654e18A890e8739101263a19Db65337bcC9',
+	'GATE' => 'https://www.gate.io/signup/VLIVAW0JBA?ref_type=102',
+	'CRYPTO' => 'https://crypto.com/app/b5d39g72gk',
+	'BONKBOT' => 'https://t.me/bonkbot_bot?start=ref_pqrxb',
+	'NOVA_BOT' => 'https://t.me/TradeonNovaBot?start=r-PWWPQ102',
+	'GMGN' => 'https://gmgn.ai/?ref=BnHBzMFg&chain=sol',
+	'MAESTRO_BOT' => 'https://t.me/maestro?start=r-sergshow'
 ];

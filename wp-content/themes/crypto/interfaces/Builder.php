@@ -31,4 +31,5 @@ interface Builder {
     public function airdropCardTop(AirdropCardTop $data);
     public function loader(LoaderSettings $data);
     public function arbitrageCalculator();
+    public function hreflang($arr);
 }

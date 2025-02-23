@@ -8,6 +8,7 @@ class DefaultBuilder implements Builder {
     use Airdrop;
     use Footer;
     use ArbitrageCalculator;
+    use hrefLang;
     private $ampPrefix = PREFIX_AMP;
     private $translate = TRANSLATE;
     private $lang = LANG;

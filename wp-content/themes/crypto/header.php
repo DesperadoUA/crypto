@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html dir="ltr" lang="ru">
+<html dir="ltr" lang="<?php echo HTML_ATTRS[LANG]; ?>">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +10,7 @@
     <?php
     include 'components/head/dal.php';
     include 'components/canonical/view.php';
+    include 'components/hreflang/dal.php';
     include 'components/styles/dal.php';
     ?>
 </head>

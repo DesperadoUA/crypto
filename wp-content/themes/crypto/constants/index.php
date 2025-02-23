@@ -2,7 +2,9 @@
 define("THEME_ROOT", dirname(__DIR__));
 define("URL", $_SERVER["REQUEST_URI"]);
 const HTML_ATTRS = ["RU" => "ru", "UA" => "uk"];
-const LANG = "RU";
+$lang = empty(get_option("_lang")) ? "RU" : get_option("_lang");
+define("LANG", $lang);
+define("DEFAULT_LANG", 'ru');
 define("TEMPLATE_DIR_URI", get_template_directory_uri());
 define("SITE_URL", get_site_url());
 const SUCCESS_STATUS = 'ok';

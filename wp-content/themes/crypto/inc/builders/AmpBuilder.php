@@ -129,4 +129,7 @@ class AmpBuilder implements Builder {
     public function arbitrageCalculator():string {
         return '';
     }
+    public function hreflang($arr):string {
+        return '';
+    }
 }
